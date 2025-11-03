@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Call list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Call list</h1>
+        <form action="contact.php" method="POST">
+            <label for="name">name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">e-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">phone number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="subject">subject:</label>
+            <select id="subject" name="subject" required>
+                <option value="">choose</option>
+                <option value="Question">Question</option>
+                <option value="Comments">Comments</option>
+                <option value="Problems">Problems</option>
+            </select>
+
+            <label for="message">message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">send</button>
+        </form>
+    </div>
+</body>
+</html>
